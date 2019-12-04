@@ -1,28 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TEST TAILWINDCSS</title>
-    <link href="{{ mix('/css/app.css') }}" rel="stylesheet" />
-</head>
-<body>
+<template>
 <div class="flex flex-wrap  md:text-center lg:text-center xl:text-center  ">
-    <div class="w-full bg-red-500 md:bg-blue-500 lg:bg-pink-500 xl:bg-teal-500 " >            
+    <div class="w-full bg-red-500 md:bg-blue-500 lg:bg-yellow-500 xl:bg-teal-500 " >            
                 <h1 class="text-xl">บันทึกสายการปฎิบัติงานของแพทย์ประจำหอผู้ป่วย</h1>
                      
     </div>
 
    
     <div class="w-full">       
-            <label class="font-bold" for="exampleInputEmail1">วันที่ปัจจุบัน:</label>
+            <label class="font-bold" for="exampleInputEmail1">วันที่ปัจจุบัน: 4-12-2562</label>
             <label for="exampleInputEmail1">
-                    <?php
-                    // print_r(getdate());
-                    $current_date=getdate();
-                    echo  "$current_date[mday]-$current_date[mon]-$current_date[year]";
-                    ?>
+                   
              </label>   
     </div>
 
@@ -98,6 +85,4 @@
                 <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">บันทึก</button>
         </div>
 </div>
-    
-</body>
-</html>
+</template>
